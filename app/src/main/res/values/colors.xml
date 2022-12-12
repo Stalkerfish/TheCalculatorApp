@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="Cadet_Grey">#90a4ae</color>
+    <color name="Dark_Purple">#231123</color>
+    <color name="Blue_Sapphire">#0b4f6c</color>
+    <color name="Crimson_UA">#a71d31</color>
+    <color name="Mellow_Apricot">#fbba72</color>
+
 </resources>
