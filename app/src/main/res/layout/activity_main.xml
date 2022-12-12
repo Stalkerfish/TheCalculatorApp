@@ -74,7 +74,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:text="@string/Divide" />
 
     </LinearLayout>
@@ -132,7 +132,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:text="@string/Multiply" />
 
     </LinearLayout>
@@ -190,7 +190,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:text="@string/Plus" />
 
     </LinearLayout>
@@ -249,7 +249,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:text="@string/Minus" />
 
     </LinearLayout>
