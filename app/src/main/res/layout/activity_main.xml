@@ -15,7 +15,7 @@
         android:background="@color/Mellow_Apricot"
         android:gravity="end|bottom"
         android:padding="10dp"
-        android:text="12345"
+        android:text="@string/_12345"
         android:textSize="48sp" />
 
     <LinearLayout
@@ -34,7 +34,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="7" />
+            android:text="@string/_7" />
 
         <Button
             android:id="@+id/btnEight"
@@ -45,7 +45,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="8" />
+            android:text="@string/_8" />
 
         <Button
             android:id="@+id/btnNine"
@@ -56,7 +56,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="9" />
+            android:text="@string/_9" />
 
         <Button
             android:id="@+id/btnDivide"
@@ -68,7 +68,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="/" />
+            android:text="@string/Divide" />
 
     </LinearLayout>
 
@@ -88,7 +88,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="4" />
+            android:text="@string/_4" />
 
         <Button
             android:id="@+id/btnFive"
@@ -99,7 +99,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="5" />
+            android:text="@string/_5" />
 
         <Button
             android:id="@+id/btnSix"
@@ -110,7 +110,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="6" />
+            android:text="@string/_6" />
 
         <Button
             android:id="@+id/btnMultiply"
@@ -122,7 +122,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="*" />
+            android:text="@string/Multiply" />
 
     </LinearLayout>
 
@@ -142,7 +142,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="1" />
+            android:text="@string/_1" />
 
         <Button
             android:id="@+id/btnTwo"
@@ -153,7 +153,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="2" />
+            android:text="@string/_2" />
 
         <Button
             android:id="@+id/btnThree"
@@ -164,7 +164,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="3" />
+            android:text="@string/_3" />
 
         <Button
             android:id="@+id/btnPlus"
@@ -176,7 +176,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="+" />
+            android:text="@string/Plus" />
 
     </LinearLayout>
 
@@ -196,7 +196,7 @@
             android:textStyle="bold"
             android:layout_weight="2"
             android:onClick="onDigit"
-            android:text="0" />
+            android:text="@string/_0" />
 
         <Button
             android:id="@+id/btnCLR"
@@ -208,7 +208,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="CLR" />
+            android:text="@string/clr" />
 
         <Button
             android:id="@+id/btnMinus"
@@ -220,7 +220,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="-" />
+            android:text="@string/Minus" />
 
     </LinearLayout>
 
@@ -241,7 +241,7 @@
             android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
-            android:text="=" />
+            android:text="@string/Equals" />
 
     </LinearLayout>
 
