@@ -22,4 +22,8 @@ class MainActivity : AppCompatActivity() {
     fun onDigit(view: View){
         tvInput?.append((view as Button).text)  // append the text in the button pressed to tvInput
     }
+
+    fun onClear(view: View){    // This give functionality to the CLR button, inserting an empty string to tvInput
+        tvInput?.text = ""
+    }
 }

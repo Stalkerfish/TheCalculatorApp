@@ -16,7 +16,7 @@
         android:background="@color/Mellow_Apricot"
         android:gravity="end|bottom"
         android:padding="10dp"
-        android:text="@string/_12345"
+        android:text="@string/result"
         android:textColor="@color/white"
         android:textSize="48sp"
         android:textStyle="italic"/>
@@ -224,7 +224,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onClear"
             android:text="@string/clr" />
 
         <Button
