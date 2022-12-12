@@ -8,16 +8,13 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    private var tvInput: TextView? =
-        null   // variable to handle the top TextView, which shows the input of the user
+    private var tvInput: TextView? = null   // variable to handle the top TextView, which shows the input of the user
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         tvInput = findViewById(R.id.tvInput)   // connects the variable to the actual UI element
-
     }
 
     private var lastWasNumeric: Boolean = true
@@ -35,9 +32,11 @@ class MainActivity : AppCompatActivity() {
 
     fun onDecimalPoint(view: View) {
         if (lastWasNumeric && !lastWasDot) {
-            tvInput?.append(".")
-            lastWasDot = true
-            lastWasNumeric = false
+            if ((tvInput?.text)?.contains(".") == false) {
+                tvInput?.append(".")
+                lastWasDot = true
+                lastWasNumeric = false
+            }
         }
     }
 }
