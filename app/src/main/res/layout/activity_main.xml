@@ -271,7 +271,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onEqual"
             android:text="@string/Equals" />
 
     </LinearLayout>

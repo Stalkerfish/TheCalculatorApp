@@ -52,6 +52,26 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun onEqual(view: View){
+        if (lastWasNumeric){    // checks if the last digit is a number, so it can perform the operation
+
+            var tvValue = tvInput?.text.toString()  //  convert the value of the TextView to an actual string,
+                                                    // see getText() method from TextView class for further information
+            try{
+                val splitValue = tvValue.split("-") //  Split the string using the operator sign as a delimiter
+
+                var one = splitValue[0] //  the split string comes in arrays
+                var two = splitValue[1]
+
+                tvInput?.text = (one.toDouble() - two.toDouble()).toString()    // convert the strings to Double, do the operation,
+                                                                                // convert back to strings, and set to tvInput, all at the same time
+
+            }catch (e: ArithmeticException){
+                e.printStackTrace()
+            }
+        }
+    }
+
     private fun isOperatorAdded(value: String) : Boolean {
 
         return if(value.startsWith("-")){   //  makes an exception for the minus sign,
