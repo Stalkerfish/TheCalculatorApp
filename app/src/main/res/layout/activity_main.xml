@@ -203,6 +203,18 @@
         >
 
         <Button
+            android:id="@+id/btnDot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:onClick="onDecimalPoint"
+            android:text="@string/Dot" />
+
+        <Button
             android:id="@+id/btnZero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -210,7 +222,7 @@
             android:textSize="22sp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:onClick="onDigit"
             android:text="@string/_0" />
 
