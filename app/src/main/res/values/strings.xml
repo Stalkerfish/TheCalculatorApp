@@ -16,5 +16,5 @@
     <string name="clr">CLR</string>
     <string name="Minus">-</string>
     <string name="Equals">=</string>
-    <string name="_12345">12345</string>
+    <string name="result">0</string>
 </resources>
