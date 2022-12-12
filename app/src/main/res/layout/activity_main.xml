@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/Crimson_UA"
+    >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="#efefef"
-        android:padding="10dp"
-        android:textSize="48sp"
-        android:text="12345"
+        android:background="@color/Mellow_Apricot"
         android:gravity="end|bottom"
-        />
+        android:padding="10dp"
+        android:text="12345"
+        android:textSize="48sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +30,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="7" />
@@ -38,6 +41,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="8" />
@@ -47,6 +52,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="9" />
@@ -56,6 +63,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/Dark_Purple"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="/" />
@@ -74,6 +84,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="4" />
@@ -83,6 +95,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="5" />
@@ -92,6 +106,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="6" />
@@ -101,6 +117,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/Dark_Purple"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="*" />
@@ -119,6 +138,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="1" />
@@ -128,6 +149,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="2" />
@@ -137,6 +160,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="3" />
@@ -146,6 +171,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/Dark_Purple"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="+" />
@@ -164,6 +192,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="2"
             android:onClick="onDigit"
             android:text="0" />
@@ -173,6 +203,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/Mellow_Apricot"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="CLR" />
@@ -182,6 +215,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/Dark_Purple"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="-" />
@@ -200,6 +236,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
+            android:backgroundTint="@color/Cadet_Grey"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:onClick="onDigit"
             android:text="=" />
