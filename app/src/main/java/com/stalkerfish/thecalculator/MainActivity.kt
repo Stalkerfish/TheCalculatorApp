@@ -79,8 +79,8 @@ class MainActivity : AppCompatActivity() {
                         one = prefix + one
                     }
 
-                    tvInput?.text = (one.toDouble() - two.toDouble()).toString()    // convert the strings to Double, do the operation,
-                                                                                    // convert back to strings, and set to tvInput, all at the same time
+                    tvInput?.text = removeZeroAfterDot((one.toDouble() - two.toDouble()).toString())    // convert the strings to Double, do the operation,
+                                                                                                        // convert back to strings, and set to tvInput, all at the same time
                 } else if (tvValue.contains("+")){
 
                     val splitValue = tvValue.split("+") //  Split the string using the operator sign as a delimiter
@@ -92,8 +92,8 @@ class MainActivity : AppCompatActivity() {
                         one = prefix + one
                     }
 
-                    tvInput?.text = (one.toDouble() + two.toDouble()).toString()    // convert the strings to Double, do the operation,
-                                                                                    // convert back to strings, and set to tvInput, all at the same time
+                    tvInput?.text = removeZeroAfterDot((one.toDouble() + two.toDouble()).toString())    // convert the strings to Double, do the operation,
+                                                                                                        // convert back to strings, and set to tvInput, all at the same time
                 } else if (tvValue.contains("/")){
 
                     val splitValue = tvValue.split("/") //  Split the string using the operator sign as a delimiter
@@ -105,8 +105,8 @@ class MainActivity : AppCompatActivity() {
                         one = prefix + one
                     }
 
-                    tvInput?.text = (one.toDouble() / two.toDouble()).toString()    // convert the strings to Double, do the operation,
-                                                                                    // convert back to strings, and set to tvInput, all at the same time
+                    tvInput?.text = removeZeroAfterDot((one.toDouble() / two.toDouble()).toString())    // convert the strings to Double, do the operation,
+                                                                                                        // convert back to strings, and set to tvInput, all at the same time
                 } else if (tvValue.contains("*")){
 
                     val splitValue = tvValue.split("*") //  Split the string using the operator sign as a delimiter
@@ -118,14 +118,22 @@ class MainActivity : AppCompatActivity() {
                         one = prefix + one
                     }
 
-                    tvInput?.text = (one.toDouble() * two.toDouble()).toString()    // convert the strings to Double, do the operation,
-                                                                                    // convert back to strings, and set to tvInput, all at the same time
+                    tvInput?.text = removeZeroAfterDot((one.toDouble() * two.toDouble()).toString())    // convert the strings to Double, do the operation,
+                                                                                                        // convert back to strings, and set to tvInput, all at the same time
                 }
 
             }catch (e: ArithmeticException){
                 e.printStackTrace()
             }
         }
+    }
+
+    private fun removeZeroAfterDot(result: String) : String{
+        var value = result
+        if(result.contains(".0"))
+            value = result.substring(0, result.length - 2)
+
+        return value
     }
 
     private fun isOperatorAdded(value: String) : Boolean {
