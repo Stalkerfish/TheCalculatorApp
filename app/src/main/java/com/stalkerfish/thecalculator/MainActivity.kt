@@ -1,5 +1,6 @@
 package com.stalkerfish.thecalculator
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -52,6 +53,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     fun onEqual(view: View){
         if (lastWasNumeric){    // checks if the last digit is a number, so it can perform the operation
 
@@ -78,6 +80,45 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     tvInput?.text = (one.toDouble() - two.toDouble()).toString()    // convert the strings to Double, do the operation,
+                                                                                    // convert back to strings, and set to tvInput, all at the same time
+                } else if (tvValue.contains("+")){
+
+                    val splitValue = tvValue.split("+") //  Split the string using the operator sign as a delimiter
+
+                    var one = splitValue[0] //  the split string comes in arrays
+                    var two = splitValue[1]
+
+                    if(prefix.isNotEmpty()){
+                        one = prefix + one
+                    }
+
+                    tvInput?.text = (one.toDouble() + two.toDouble()).toString()    // convert the strings to Double, do the operation,
+                                                                                    // convert back to strings, and set to tvInput, all at the same time
+                } else if (tvValue.contains("/")){
+
+                    val splitValue = tvValue.split("/") //  Split the string using the operator sign as a delimiter
+
+                    var one = splitValue[0] //  the split string comes in arrays
+                    var two = splitValue[1]
+
+                    if(prefix.isNotEmpty()){
+                        one = prefix + one
+                    }
+
+                    tvInput?.text = (one.toDouble() / two.toDouble()).toString()    // convert the strings to Double, do the operation,
+                                                                                    // convert back to strings, and set to tvInput, all at the same time
+                } else if (tvValue.contains("*")){
+
+                    val splitValue = tvValue.split("*") //  Split the string using the operator sign as a delimiter
+
+                    var one = splitValue[0] //  the split string comes in arrays
+                    var two = splitValue[1]
+
+                    if(prefix.isNotEmpty()){
+                        one = prefix + one
+                    }
+
+                    tvInput?.text = (one.toDouble() * two.toDouble()).toString()    // convert the strings to Double, do the operation,
                                                                                     // convert back to strings, and set to tvInput, all at the same time
                 }
 
