@@ -57,14 +57,29 @@ class MainActivity : AppCompatActivity() {
 
             var tvValue = tvInput?.text.toString()  //  convert the value of the TextView to an actual string,
                                                     // see getText() method from TextView class for further information
+
+            var prefix = ""
+
             try{
-                val splitValue = tvValue.split("-") //  Split the string using the operator sign as a delimiter
 
-                var one = splitValue[0] //  the split string comes in arrays
-                var two = splitValue[1]
+                if(tvValue.startsWith("-")){
+                    prefix = "-"
+                    tvValue = tvValue.substring(1)
+                }
+                if (tvValue.contains("-")){
 
-                tvInput?.text = (one.toDouble() - two.toDouble()).toString()    // convert the strings to Double, do the operation,
-                                                                                // convert back to strings, and set to tvInput, all at the same time
+                    val splitValue = tvValue.split("-") //  Split the string using the operator sign as a delimiter
+
+                    var one = splitValue[0] //  the split string comes in arrays
+                    var two = splitValue[1]
+
+                    if(prefix.isNotEmpty()){
+                        one = prefix + one
+                    }
+
+                    tvInput?.text = (one.toDouble() - two.toDouble()).toString()    // convert the strings to Double, do the operation,
+                                                                                    // convert back to strings, and set to tvInput, all at the same time
+                }
 
             }catch (e: ArithmeticException){
                 e.printStackTrace()
